@@ -75,6 +75,14 @@ src/
 
 ---
 
+## 백로그
+
+- `whoami` 명령어: 현재 'visitor' 하드코딩 → 추후 role(guest/admin) 기반으로 수정 필요
+- Tab 자동완성: `ls`, `cd` 등 나중에 추가될 명령어에도 `argCompletions` 등록 필요
+- Framer Motion 번들 크기 경고 (561KB) → lazy import로 분리 가능
+
+---
+
 ## 결정된 사항
 
 ### 2025-05-19

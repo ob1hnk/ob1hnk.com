@@ -17,3 +17,8 @@ export const registry: Record<string, CommandHandler> = {
   time,
   theme,
 };
+
+// Tab completion candidates for each command's arguments
+export const argCompletions: Record<string, string[]> = {
+  theme: ['dark', 'light'],
+};
