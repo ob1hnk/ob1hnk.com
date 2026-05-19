@@ -47,20 +47,20 @@ src/
       floatingItems.ts    🔲 나중에 추가
       auth.ts             🔲 나중에 추가
   cli/
-    index.tsx             🔲 CLIWindow 컴포넌트 (드래그 가능한 창)
+    index.tsx             ✅ CLIWindow (Framer Motion drag, titlebar, output, input)
     parser.ts             ✅ 입력 문자열 → { cmd, args, flags }
-    registry.ts           ✅ 명령어 레지스트리 (비어있음)
-    history.ts            🔲 ↑↓ 히스토리 탐색
+    registry.ts           ✅ 명령어 레지스트리
+    history.ts            🔲 ↑↓ 히스토리 탐색 (현재 CLIWindow 인라인 처리)
     output/
       types.ts            ✅ OutputLine 타입 정의
-      renderer.tsx        🔲 타입별 렌더러
+      renderer.tsx        🔲 table/component 렌더러 (현재 CLIWindow 인라인 처리)
     commands/
-      help.ts             🔲
-      whoami.ts           🔲
-      cowsay.ts           🔲
-      clear.ts            🔲 (파일만 있음)
-      time.ts             🔲
-      theme.ts            🔲
+      help.ts             ✅
+      whoami.ts           ✅
+      cowsay.ts           ✅
+      clear.ts            ✅ (CLIWindow에서 직접 처리)
+      time.ts             ✅ (브라우저 로케일 자동 적용)
+      theme.ts            ✅
   components/
     FloatingItem.tsx      🔲 드래그 가능한 개별 아이템
     Desktop.tsx           🔲 절대 위치 레이아웃 컨테이너
@@ -99,10 +99,10 @@ src/
 ✅ Zustand store 골격 (slices 패턴: cli.ts, site.ts)
 ✅ Supabase 연결 확인 (/admin 페이지)
 ✅ Vercel 배포 + Analytics
-🔲 CLIWindow 컴포넌트 (드래그 가능한 창)
-🔲 useGlobalShortcut (백틱 토글)
-🔲 Parser + Command Registry
-🔲 첫 명령어들 (help, whoami, cowsay, clear, time, theme)
+✅ CLIWindow 컴포넌트 (드래그 가능한 창, titlebar만 드래그)
+✅ useGlobalShortcut (백틱 토글, Ctrl+` 항상 동작)
+✅ Parser + Command Registry
+✅ 첫 명령어들 (help, whoami, cowsay, clear, time, theme)
 🔲 Desktop + FloatingItem 컴포넌트
 🔲 store/slices/floatingItems.ts
 🔲 store/slices/auth.ts
