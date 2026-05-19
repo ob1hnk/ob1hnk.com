@@ -1,9 +1,19 @@
 import type { OutputLine } from './output/types';
+import { help } from './commands/help';
+import { whoami } from './commands/whoami';
+import { cowsay } from './commands/cowsay';
+import { time } from './commands/time';
+import { theme } from './commands/theme';
 
 export type CommandHandler = (
   args: string[],
-  flags: Record<string, boolean>
-) => OutputLine | OutputLine[];
+  flags: Record<string, boolean>,
+) => OutputLine | OutputLine[] | void;
 
-// Step 5에서 명령어들이 여기 등록됨
-export const registry: Record<string, CommandHandler> = {};
+export const registry: Record<string, CommandHandler> = {
+  help,
+  whoami,
+  cowsay,
+  time,
+  theme,
+};

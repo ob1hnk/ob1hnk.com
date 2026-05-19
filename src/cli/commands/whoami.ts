@@ -1,2 +1,6 @@
-// TODO: Step 5
-export {};
+import type { CommandHandler } from '../registry';
+
+export const whoami: CommandHandler = () => ({
+  type: 'text',
+  content: 'visitor',
+});
