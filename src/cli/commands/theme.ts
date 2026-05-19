@@ -7,5 +7,5 @@ export const theme: CommandHandler = (args) => {
     return { type: 'error', content: 'usage: theme dark | theme light' };
   }
   useSiteStore.getState().setTheme(t);
-  return { type: 'text', content: `theme → ${t}` };
+  return { type: 'text', content: `theme changed to ${t}` };
 };
