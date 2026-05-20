@@ -86,11 +86,13 @@ src/
 
 ## 결정된 사항
 
-### 2025-05-19
-- CLI UI: **드래그 가능한 창** (하단 바 없이). Framer Motion drag 사용.
+### CLI
+- UI: **드래그 가능한 창** (하단 바 없이). Framer Motion drag 사용.
   - 이유: 데스크탑 메타포와 컨셉 일관성. 최소화 시 하단 탭으로 전환 가능.
-- CLI 구현 순서: Store 골격 + 창 껍데기 → Parser + Registry → Output System
-- 백틱(`) 또는 Ctrl+` 로 CLI 토글
+- 구현 순서: Store 골격 + 창 껍데기 → Parser + Registry → Output System
+- 백틱(`) 또는 Ctrl+`` ` `` 로 CLI 토글 (하단바 완성 후 제거 예정)
+- `OutputLine` 타입은 실제로 쓰이는 것만 유지 (`text | error | ascii`).
+  `table`, `component` 등은 해당 명령어 추가 시 그때 함께 정의한다.
 
 ---
 

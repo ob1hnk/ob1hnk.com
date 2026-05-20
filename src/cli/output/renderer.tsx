@@ -30,12 +30,6 @@ export function Line({ line }: { line: OutputLine }) {
   if (line.type === 'ascii') {
     return <pre style={{ color: C.text, lineHeight: 1.3, margin: 0 }}>{line.content}</pre>;
   }
-  if (line.type === 'table') {
-    return <span style={{ color: C.dim }}>[table]</span>; // TODO: implement table renderer
-  }
-  if (line.type === 'component') {
-    return <>{line.content}</>;
-  }
   if (line.content === '') {
     return <div style={{ height: '0.4rem' }} />; // blank spacer between commands
   }
