@@ -50,8 +50,6 @@ src/
   pages/
     Home.tsx              ✅
     Admin.tsx             ✅ (Supabase 연결 테스트 포함)
-  hooks/
-    useGlobalShortcut.ts  ✅ 백틱/Ctrl+` → CLI 토글 (하단바 완성 후 제거 예정)
   lib/
     supabase.ts           ✅
 ```

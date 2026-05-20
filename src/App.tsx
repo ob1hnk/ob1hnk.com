@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Admin from './pages/Admin';
 import { CLIWindow } from './cli';
-import { useGlobalShortcut } from './hooks/useGlobalShortcut';
+import { useGlobalShortcut } from './cli/useGlobalShortcut';
 import { useSiteStore } from './store';
 
 function AppInner() {
