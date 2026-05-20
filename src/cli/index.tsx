@@ -16,7 +16,7 @@ import { motion, useDragControls } from 'framer-motion';
 import { useCLIStore } from '../store';
 import { parse } from './parser';
 import { registry } from './registry';
-import { getCompletions, applyCompletion } from './history';
+import { getCompletions, applyCompletion } from './completion';
 import { C, Line } from './output/renderer';
 
 export function CLIWindow() {

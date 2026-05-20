@@ -50,7 +50,7 @@ src/
     index.tsx             ✅ CLIWindow (Framer Motion drag, titlebar, output, input)
     parser.ts             ✅ 입력 문자열 → { cmd, args, flags }
     registry.ts           ✅ 명령어 레지스트리
-    history.ts            🔲 ↑↓ 히스토리 탐색 (현재 CLIWindow 인라인 처리)
+    completion.ts         ✅ Tab 자동완성 (getCompletions, applyCompletion)
     output/
       types.ts            ✅ OutputLine 타입 정의
       renderer.tsx        🔲 table/component 렌더러 (현재 CLIWindow 인라인 처리)
@@ -135,6 +135,7 @@ src/
 - 학습보다 scalability/구현 품질/목적 부합 우선
 - 한국어로 대화
 - 코드 변경 후 "다음 할 일" 항상 명시
+- **항상 common practice를 우선 고려**한다. 이 프로젝트에 더 적합한 이유가 명확할 때만 다른 방법을 선택한다. (파일명, 폴더구조, API 설계, 패턴 등 모든 결정에 적용)
 
 ### 업무 종료 시 필수 출력
 
