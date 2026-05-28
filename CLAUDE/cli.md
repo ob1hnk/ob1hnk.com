@@ -104,8 +104,7 @@ export const C = {
 
 ## 폴더 구조 노트
 
-- CLI 전용 hook이 늘어나면 `src/cli/hooks/`를 만들어 그 안에 넣을 것.
-- 앱 전체에서 재사용 가능한 범용 hook이 생기면 `src/hooks/`를 복구할 것.
+- CLI 전용 hook이 늘어나면 `src/cli/hooks/`를 만들고, 이때 useGlobalShortcut.ts를 그 안에 넣을 것.
 
 ---
 
